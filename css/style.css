@@ -8,19 +8,19 @@
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+p {
+    margin: 0;
 }
 
 /*!--------HEADER---------*/
 
 header {
-    background-color: #FAF0CA;
-}
-
-.header-fixed{
-    width: 100%;
-    position: fixed;
-    margin-bottom: 20px;
-    z-index: 99;
+    background-color:  #FAF0CA;
+    position: sticky;
+    top: 0;
 }
 
 header p{
@@ -33,11 +33,7 @@ header p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-}
-
-.label-header{
-    margin-right: 55px;
+    padding: 5px;
 }
 
 .titulo{
@@ -101,13 +97,15 @@ header nav ul li a{
     color: #ACA885;
 }
 
+dl, ol, ul{
+    margin-bottom: 0;
+}
 
 /*!--------MAIN---------*/
 
 main{
-    background-color: #FAF0CA;
+    background-color:  #FAF0CA;
     font-family: 'Poppins', sans-serif;
-    padding-top: 20%;
 }
 
 .productos > div{
@@ -118,8 +116,8 @@ main{
 
 .productos div div{
     border: 2px solid  #aca885;
-    width: 230px; 
-    height: 390px;
+    width: 210px; 
+    height: 350px;
     text-align: center;
     background-color: #FAF0CA;
     color: white;
@@ -147,7 +145,7 @@ main{
 
 .seguicomprando{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 63px;
     margin-bottom: 50px;
 }
 
@@ -174,12 +172,11 @@ main{
     height: 300px;
     position: relative;
     left: 40%;
-    margin-bottom: 5%;
+    padding-bottom: 50px;
 }
 
 .meriendas div h3{
     position: absolute;
-    bottom: 0;
     color: white;
     background-color: #ACA885;
     width: 100%;
@@ -196,6 +193,7 @@ main{
 
 footer {
     background-color: #3e4541;
+    bottom: 0;
 }
 
 .row-container{
