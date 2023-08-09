@@ -8,7 +8,6 @@
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 p {
@@ -59,7 +58,7 @@ h1 a{
 }
 
 .palabras{
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
 .contenedor-header .sesion .carro img{
@@ -73,7 +72,7 @@ h1 a{
 }
 
 .border-right{
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .border-left{
@@ -117,21 +116,22 @@ main{
 
 .productos div div{
     border: 2px solid  #aca885;
-    width: 210px; 
-    height: 350px;
+    width: 220px; 
+    height: 370px;
     text-align: center;
     background-color: #FAF0CA;
     color: white;
-    margin: 20px;
+    margin: 17px;
+}
+
+.productos div div h3{
+    font-size: 23px;
+    
 }
 
 .productos div img{
     width: 100%;
-    height: 80%;
-}
-
-.productos div h3{
-    margin-bottom: 2px;
+    height: 75%;
 }
 
 
@@ -146,8 +146,8 @@ main{
 
 .seguicomprando{
     text-align: center;
-    margin-top: 63px;
-    margin-bottom: 50px;
+    margin-top: 57px;
+    padding-bottom: 60px;
 }
 
 .seguicomprando div a{
@@ -156,38 +156,6 @@ main{
     background-color: #8f8d72;
     padding: 15px;
     border-radius: 15px;
-}
-
-.experiencias h2{
-    text-align: center;
-    padding-bottom: 20px;
-    color: rgb(66, 62, 56);
-}
-
-.meriendas{
-    text-align: center;
-    display: inline;
-}
-.meriendas div{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: 40%;
-    padding-bottom: 50px;
-}
-
-.meriendas div h3{
-    position: absolute;
-    color: white;
-    background-color: #ACA885;
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-}
-
-.meriendas div img{
-    width: 100%;
-    height: 100%;
 }
 
 /*!--------FOOTER---------*/
@@ -204,39 +172,40 @@ footer {
     padding-bottom: 50px;
 }
 
+.row-container h3{
+    font-size: 23px;
+}
+
+.row-container img{
+    height: 40px;
+    margin-right: 20px;
+}
+
 .envios-img{
     display: flex;
 }
 
-.envios-img img{
-    height: 40px;
-    margin-right: 20px;
-}
-
 .envios-conteiner{
-    margin-right: 10%;
-    border-right: 3px solid  #aca885
+    border-right: 3px solid  #12110a;
+    margin-right: 1%;
 }
 
 .pago-img{
     display: flex;
-    margin-right: 30px;
 }
 
 .pago-img img{
-    height: 40px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .seguridad-img{
     display: flex;
-    margin-left: 2px;
+    margin-left: 3%;
     border-left: 3px solid black
 }
 
 .seguridad-img img{
-    height: 40px;
-    margin-right: 10px;
+    margin-left: 8%;
 }
 
 .grid-footer{
@@ -312,3 +281,21 @@ footer nav ul li a{
     background-color: aliceblue;
     color: aqua;
 }
+
+/*--------PRODUCTOS--------*/
+
+
+/*--------SESION-CREAR--------*/
+
+.formulario{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main form{
+    width: 60%;
+}
+
+/*--------SESION-INICIAR--------*/
