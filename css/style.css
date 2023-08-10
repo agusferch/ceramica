@@ -269,10 +269,31 @@ footer nav ul li a{
 
 /*!--------MEDIA QUERY---------*/
 
-@media screen and (max-width:550px) {
-    header div div h1 a{
-        color: aqua;
+@media screen and (max-width:1020px){
+    .border-right{display: none;}
+    .border-left{border: none;
     }
+}
+
+@media screen and (max-width:836px){
+    .titulo{text-align: center;}
+    .contenedor-header nav{width: 28%;}
+    .border-left{display: none;}
+    .row-container{display: flex; justify-content: center;}
+    .envios-conteiner{border: none;}
+    .pago-img{display: none;}
+    .seguridad-img{display: none;}
+    .grid-footer{grid-template-areas:"navegacion navegacion redes"}
+    .contactanos{display: none;}
+}
+
+@media screen and (max-width:535px){
+    .contenedor-header nav{display: none;}
+}
+
+@media screen and (max-width:386px){
+    .carro{display: none;}
+    .redes{display: flex; flex-wrap: wrap;}
 }
 
 /*!--------PSEUDO CLASE---------*/
