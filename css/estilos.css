@@ -1,0 +1,221 @@
+.claseboton {
+  background-color: black;
+  border: 2px solid tomato;
+  color: white; }
+
+.randomclass {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.randomclass {
+  background-color: aqua;
+  border: 2px black solid; }
+
+.claserandom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/*!--------RESET---------*/
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box; }
+
+dl, ol, ul {
+  margin-bottom: 0; }
+
+p {
+  margin: 0; }
+
+/*!--------TIPOGRAFIA---------*/
+header {
+  background-color: #FAF0CA;
+  position: sticky;
+  top: 0; }
+  header .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; }
+    header .contenedor-header .titulo {
+      display: flex; }
+      header .contenedor-header .titulo img {
+        height: 48px; }
+      header .contenedor-header .titulo h1 a {
+        font-family: 'Lobster', cursive;
+        color: #ACA885;
+        font-size: 45px;
+        list-style: none;
+        text-decoration: none;
+        display: inline-block; }
+    header .contenedor-header .sesion {
+      padding: 3%;
+      display: flex; }
+      header .contenedor-header .sesion .sesion a {
+        text-decoration: none;
+        list-style: none; }
+      header .contenedor-header .sesion .palabras {
+        margin-top: 3px; }
+        header .contenedor-header .sesion .palabras .border-right {
+          padding: 0 5px; }
+        header .contenedor-header .sesion .palabras .border-left {
+          border-left: 3px solid  #aca885;
+          padding: 0 10px; }
+      header .contenedor-header .sesion .carro img {
+        height: 28px;
+        margin-left: 10px; }
+  header .options ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px; }
+    header .options ul li {
+      margin: 20px;
+      font-family: 'Russo One', sans-serif; }
+      header .options ul li a {
+        text-decoration: none;
+        color: #ACA885; }
+
+/*!--------MAIN---------*/
+main {
+  background-color: #FAF0CA;
+  font-family: 'Poppins', sans-serif; }
+  main .productos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    main .productos > div div {
+      border: 2px solid  #aca885;
+      width: 220px;
+      height: 370px;
+      text-align: center;
+      background-color: #FAF0CA;
+      color: white;
+      margin: 17px; }
+      main .productos > div div img {
+        width: 100%;
+        height: 75%; }
+      main .productos > div div h3 {
+        font-size: 23px; }
+      main .productos > div div .boton {
+        text-decoration: none;
+        color: white;
+        background-color: #8f8d72;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 1px; }
+  main .seguicomprando {
+    text-align: center;
+    margin-top: 57px;
+    padding-bottom: 60px; }
+    main .seguicomprando div a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: #8f8d72;
+      padding: 15px;
+      border-radius: 15px; }
+
+footer {
+  background-color: #3e4541;
+  bottom: 0; }
+  footer .row-conteiner {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 50px; }
+    footer .row-conteiner .envios-img {
+      display: flex; }
+      footer .row-conteiner .envios-img img {
+        height: 40px;
+        margin-right: 20px; }
+      footer .row-conteiner .envios-img .envios-conteiner {
+        border-right: 3px solid  #12110a;
+        margin-right: 1%; }
+        footer .row-conteiner .envios-img .envios-conteiner h3 {
+          font-size: 23px; }
+    footer .row-conteiner .pago-img {
+      display: flex; }
+      footer .row-conteiner .pago-img img {
+        height: 40px;
+        margin-left: 20px; }
+      footer .row-conteiner .pago-img .pago-conteiner h3 {
+        font-size: 23px; }
+    footer .row-conteiner .seguridad-img {
+      display: flex;
+      margin-left: 3%;
+      border-left: 3px solid black; }
+      footer .row-conteiner .seguridad-img img {
+        height: 40px;
+        margin-left: 8%; }
+      footer .row-conteiner .seguridad-img .seguridad-conteiner h3 {
+        font-size: 23px; }
+  footer .grid-footer {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "navegacion contactanos redes"; }
+    footer .grid-footer nav {
+      grid-area: navegacion; }
+      footer .grid-footer nav ul {
+        margin-top: 10px;
+        list-style: none; }
+        footer .grid-footer nav ul li a {
+          text-decoration: none;
+          color: white; }
+    footer .grid-footer .contactanos {
+      grid-area: contactanos; }
+      footer .grid-footer .contactanos h3 {
+        margin-bottom: 10px; }
+    footer .grid-footer .redes {
+      grid-area: redes; }
+      footer .grid-footer .redes h3 {
+        margin-bottom: 10px; }
+      footer .grid-footer .redes img {
+        height: 48px; }
+  footer .footer-legal p {
+    text-align: center;
+    background-color: #242825;
+    color: white; }
+
+/*!--------MAIN---------*/
+main {
+  background-color: #FAF0CA;
+  font-family: 'Poppins', sans-serif; }
+  main .productos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    main .productos > div .productos div div {
+      border: 2px solid  #aca885;
+      width: 220px;
+      height: 370px;
+      text-align: center;
+      background-color: #FAF0CA;
+      color: white;
+      margin: 17px; }
+      main .productos > div .productos div div .productos div div h3 {
+        font-size: 23px; }
+      main .productos > div .productos div div .productos div img {
+        width: 100%;
+        height: 75%; }
+      main .productos > div .productos div div .boton {
+        text-decoration: none;
+        color: white;
+        background-color: #8f8d72;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 1px; }
+  main .seguicomprando {
+    text-align: center;
+    margin-top: 57px;
+    padding-bottom: 60px; }
+    main .seguicomprando .seguicomprando div a {
+      text-decoration: none;
+      color: aliceblue;
+      background-color: #8f8d72;
+      padding: 15px;
+      border-radius: 15px; }
