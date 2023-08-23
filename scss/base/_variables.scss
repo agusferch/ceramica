@@ -1,37 +1,11 @@
-//! Son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo
-//! Son reservadas en la memoria para almacenar datos (nos sirven para guardar informacion)
-
 $color-primario: #FAF0CA;
+$tipografia-color: #ACA885;
 $color-secundario: black;
-
-//Listas: Permite guardar dentro de una variable mas de un valor//
-
-$colores:
-red,
-green,
-blue,
-aqua,
-pink;
 
 $font-size:
 12px,
 16px,
 24px;
-
-//Mapas: Permite agrupar estilos que no necesariamente estan relacionados entre si//
-
-$boton:(
-    //key    -     value
-    bg-boton: black,
-    border-boton: 2px solid tomato,
-    color-text: white,
-);
-
-.claseboton{
-    background-color: map-get($boton, bg-boton);
-    border: map-get($boton, border-boton);
-    color: map-get($boton, color-text);
-}
 
 //extends
 
@@ -53,28 +27,6 @@ $boton:(
     display: $flex;
     justify-content: $justify;
     align-items: $align;
-}
-
-.claserandom{
-    @include flex(flex, space-around, center)
-}
-
-//operaciones arimeticas: + - *
-
-$ancho: 800px;
-
-.claserandom img{
-    width: $ancho / 2 + 100;
-}
-
-//Condicionales: permite establecer una regla para validar si se aplica o no una accion. Si se cumple sucede algo y sino sucede, ocurre otra cosa
-
-//bucle
-
-@for $i from 1 through 6{
-    .classs-#{$i}{
-        order: $i;
-    }
 }
 
 

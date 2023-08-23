@@ -1,11 +1,9 @@
 header{
-    background-color:  #FAF0CA;
+    background-color: $color-primario;
     position: sticky;
     top: 0;
     .contenedor-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(flex, space-between, center);
         padding: 5px;
         .titulo{
             display: flex;
@@ -14,9 +12,8 @@ header{
             }
             h1 a{
                 font-family:'Lobster', cursive;
-                color: #ACA885;
+                color: $tipografia-color;
                 font-size: 45px;
-                list-style: none;
                 text-decoration: none;
                 display: inline-block;
             }
@@ -24,13 +21,21 @@ header{
         .sesion{
             padding: 3%;
             display: flex;
-            .sesion a{text-decoration: none;
-                    list-style: none;}
+            .sesion a{
+                text-decoration: none;}
             .palabras{
                 margin-top: 3px;
-                .border-right{padding:0 5px;}
-                .border-left{border-left: 3px solid  #aca885;
-                            padding: 0 10px;}
+                .border-right{
+                    padding:0 5px;
+                    text-decoration: none;
+                    color: $tipografia-color;
+                }
+                .border-left{
+                    border-left: 3px solid  #aca885;
+                    padding: 0 10px;
+                    text-decoration: none;
+                    color: $tipografia-color;
+                        }
             }
             .carro img{height: 28px;
                         margin-left: 10px;}
@@ -39,8 +44,7 @@ header{
     .options{
         ul{
             list-style: none;
-            display: flex;
-            justify-content: center;
+            @include flex(flex, center, center);
             padding-bottom: 15px;
             li{
                 margin: 20px;

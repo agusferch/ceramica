@@ -1,7 +1,6 @@
-/*!--------MAIN---------*/
 
 main{
-    background-color:  #FAF0CA;
+    background-color: $color-primario;
     font-family: 'Poppins', sans-serif;
     .productos > div{
         display: flex;
