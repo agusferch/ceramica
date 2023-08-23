@@ -69,18 +69,6 @@ $ancho: 800px;
 
 //Condicionales: permite establecer una regla para validar si se aplica o no una accion. Si se cumple sucede algo y sino sucede, ocurre otra cosa
 
-@mixin modos (&darkmode){
-    @if $darkmode == black{
-        border: solid 2px white;
-    }@else{
-        border: solid 2px aqua;
-    }
-}
-
-.bg-condicional{
-    @include modos(black)
-}
-
 //bucle
 
 @for $i from 1 through 6{
