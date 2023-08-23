@@ -209,3 +209,48 @@ footer {
   align-items: center; }
   .formulario form {
     width: 60%; }
+
+@media screen and (max-width: 1020px) {
+  header .contenedor-header .sesion .palabras .border-right {
+    display: none; }
+  header .contenedor-header .sesion .palabras .border-left {
+    border: none; } }
+
+@media screen and (max-width: 836px) {
+  header .contenedor-header nav {
+    width: 28%; }
+  header .contenedor-header .titulo {
+    text-align: center; }
+  header .contenedor-header .sesion .palabras .border-left {
+    display: none; }
+  footer .row-conteiter {
+    display: flex;
+    justify-content: center; }
+    footer .row-conteiter .envios-img .envios-conteiner {
+      border: none; }
+    footer .row-conteiter .pago-img {
+      display: none; }
+    footer .row-conteiter .seguridad-img {
+      display: none; }
+  footer .grid-footer {
+    grid-template-areas: "navegacion navegacion redes"; }
+    footer .grid-footer .contactanos {
+      display: none; } }
+
+@media screen and (max-width: 573px) {
+  header .contenedor-header nav {
+    display: none; }
+  header .contenedor-header .titulo {
+    display: flex;
+    justify-content: center; }
+  footer .row-conteiner .envios-img {
+    display: none; }
+  footer .row-conteiner .seguridad-img {
+    display: none; } }
+
+@media screen and (max-width: 386px) {
+  header .contenedor-header .sesion .carro {
+    display: none; }
+  footer .grid-footer .redes {
+    display: flex;
+    flex-wrap: wrap; } }
