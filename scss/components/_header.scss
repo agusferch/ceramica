@@ -1,6 +1,7 @@
 header{
     background-color: $color-primario;
     position: sticky;
+    z-index: 100;
     top: 0;
     .contenedor-header{
         @include flex(flex, space-between, center);

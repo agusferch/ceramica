@@ -1,5 +1,5 @@
 footer {
-    background-color: #3e4541;
+    background-color: $color-secundario;
     bottom: 0;
     .row-conteiner{
         @include flex(flex, center, none);
@@ -8,7 +8,7 @@ footer {
         .envios-img{
             display: flex;
             img{
-                height: 40px;
+                height: $footer-img-height;
                 margin-right: 20px;}
             .envios-conteiner{
                 border-right: 3px solid  #12110a;
@@ -19,7 +19,7 @@ footer {
         .pago-img{
             display: flex;
             img{
-                height: 40px;
+                height: $footer-img-height;
                 margin-left: 23px;
                 margin-right: 15px;
             }
@@ -30,7 +30,7 @@ footer {
             margin-left: 3%;
             border-left: 3px solid black;
             img{
-                height: 40px;
+                height: $footer-img-height;
                 margin-left: 8%;
                 margin-right: 3%;
             }
@@ -53,14 +53,17 @@ footer {
                 list-style: none;
             li a{
                 text-decoration: none;
-                color: white;
+                color: rgb(0, 0, 0);
             }
             }
             }
         .contactanos{
             grid-area: contactanos;
             h3{margin-bottom: 10px;}
-            a{text-decoration: none;}
+            a{
+                text-decoration: none;
+                color: #12110a;
+            }
         }
         .redes{
             grid-area: redes;
@@ -70,7 +73,7 @@ footer {
         }
         .footer-legal p{
             text-align: center;
-            background-color: #242825;
+            background-color: #646263;
             color: white;
         }
 }
