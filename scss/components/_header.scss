@@ -5,7 +5,7 @@ header{
     top: 0;
     .contenedor-header{
         @include flex(flex, space-between, center);
-        padding: 5px;
+        padding: 2px;
         .titulo{
             display: flex;
             img{
@@ -23,7 +23,9 @@ header{
             padding: 3%;
             display: flex;
             .sesion a{
-                text-decoration: none;}
+                text-decoration: none;
+                transition: text-decoration 1s;
+            }
             .palabras{
                 margin-top: 3px;
                 .border-right{
@@ -31,12 +33,20 @@ header{
                     text-decoration: none;
                     color: $tipografia-color;
                 }
+                .border-right:hover{
+                    text-decoration: underline;
+                    color: $color-hover;
+                }
                 .border-left{
                     border-left: 3px solid  #aca885;
                     padding: 0 10px;
                     text-decoration: none;
                     color: $tipografia-color;
                         }
+                .border-left:hover{
+                    text-decoration: underline;
+                    color: $color-hover;
+                }
             }
             .carro img{height: 28px;
                         margin-left: 10px;}
@@ -46,12 +56,18 @@ header{
         ul{
             list-style: none;
             @include flex(flex, center, center);
-            padding-bottom: 15px;
+            padding-bottom: 10px;
             li{
-                margin: 20px;
+                margin: 15px;
                 font-family: 'Russo One', sans-serif;
-                a{ text-decoration: none;
-                                    color: #ACA885;}
+                a{ 
+                    text-decoration: none;
+                    color: #ACA885;
+                    transition: 1s;
+                }
+                a:hover{
+                    color: $color-hover;
+                }
             }
         }
     }

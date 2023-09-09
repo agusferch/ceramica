@@ -4,5 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    form{width: 60%;};
+    form{width: 60%;}
+    .cuenta p{margin-top: 10px;}
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }

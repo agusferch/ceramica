@@ -1,6 +1,7 @@
 $color-primario: #FAF0CA;
 $tipografia-color: #ACA885;
 $color-secundario:#ecccd7;
+$color-hover:#4f4e3c;
 
 $footer-img-height: 40px;
 
@@ -9,10 +10,18 @@ $footer-img-height: 40px;
 %boton{
     text-decoration: none;
     color: $color-primario;
-    background-color: #8f8d72;
+    background-color: #a7a47c;
     font-size: 18px;
     font-weight: 900;
-    padding: 2.5px;
+    padding: 2px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+%boton-hover{
+    background-color: #63624d;
+    color: antiquewhite;
 }
 
 //mixin

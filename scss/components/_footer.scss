@@ -55,6 +55,9 @@ footer {
                 text-decoration: none;
                 color: rgb(0, 0, 0);
             }
+            li a:hover{
+                text-decoration: underline;
+            }
             }
             }
         .contactanos{
@@ -63,6 +66,9 @@ footer {
             a{
                 text-decoration: none;
                 color: #12110a;
+            }
+            a:hover{
+                text-decoration: underline;
             }
         }
         .redes{

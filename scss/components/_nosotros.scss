@@ -1,11 +1,18 @@
-#carouselExampleIndicators{
-    max-height: 350px; /* Establece la altura máxima según tus necesidades */
-    overflow: hidden; /* Oculta el contenido que se desborde si es necesario */
-    .carousel-inner{
-        .carousel-item img{
-            max-height: 100%; /* Ajusta la altura de las imágenes para que se adapten al contenedor */
-            width: auto; /* Mantiene la relación de aspecto original de las imágenes */
+main{
+    #carouselExampleIndicators{
+        max-height: 530px; 
+        overflow: hidden; 
+        .carousel-inner{
+            .carousel-item img{
+                max-height: 80%;
+                width: auto; 
+            }
         }
+    }
+    .card-group{
+            .card-body{
+                background-color: $color-primario;
+            }
     }
 }
 

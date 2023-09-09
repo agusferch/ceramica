@@ -7,19 +7,28 @@ main{
         flex-wrap: wrap;
         justify-content: space-evenly;
         div{
-            border: 2px solid  #aca885;
+            border: 2px solid  #dedab8;
             width: 220px; 
             height: 370px;
             text-align: center;
-            background-color: #cfcba5;
+            background-color: #e6e1b5;
             color: white;
             margin: 17px;
             img{width: 100%;
-                height: 75%;}
+                height: 73%;}
             h2{font-size: 23px;}
             .boton{ 
                 @extend %boton;
             }
+            .boton:hover{
+                @extend %boton-hover;
+            }
+        }
+        div:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 10px 31px -8px black;
+            -webkit-box-shadow: 10px 10px 31px -8px black;
+            -moz-box-shadow: 10px 10px 31px -8px black;
         }
     }
     .seguicomprando{
@@ -32,6 +41,10 @@ main{
             background-color: #8f8d72;
             padding: 15px;
             border-radius: 15px;
+            transition: 1s;
+        }
+        div a:hover{
+            @extend %boton-hover;
         }
     }
 }
